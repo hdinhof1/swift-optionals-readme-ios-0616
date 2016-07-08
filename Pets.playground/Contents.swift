@@ -12,7 +12,11 @@ if let petName = petName {
     print("My friend's pet is \(petName)")
 }
 
+petName = nil
+
 if let friendsPet = petName {
     print("My friend's pet is \(friendsPet)")
     print("petName is still an Optional! \(petName)")
+}else {
+    print("uh-oh optional binding friendsPet doesnt exist, since petName is \(petName)")
 }
